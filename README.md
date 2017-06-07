@@ -69,6 +69,11 @@ gantt-php-mysql-live-edit/
     README.md
 ```
 
+## Please note
+Current demo doesn't save gantt chart connectors to simplify the demonstration and 
+data base structure.
+
+
 ## Technologies
 Language - [PHP](http://php.net)<br />
 Database - [MySQL](https://www.mysql.com/)<br />
