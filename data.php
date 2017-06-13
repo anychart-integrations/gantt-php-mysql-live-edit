@@ -1,6 +1,6 @@
 <?php
 	// Connect to MySQL database
-	$mysqli = new mysqli("localhost", "anychart_user", "anychart_pass", "le_demo", 18889);
+	$mysqli = new mysqli("localhost", "anygantt_user", "anygantt_pass", "anygantt_db", 18889);
 
 	// check connection
     if ($mysqli->connect_errno) die("Connect failed: " . $mysqli->connect_error);

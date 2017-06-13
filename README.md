@@ -37,7 +37,7 @@ $ php -m
 
 Set up MySQL database, use `-u -p` flags to provide username and password:
 ```
-$  mysql < database_backup.sql
+$  mysql -u USER_NAME -p < dump.sql
 ```
 
 Drop `index.html`, `data.php`, `live_edit.php` and `js` and `css` folders
@@ -45,11 +45,6 @@ to a folder where you serve your .php files and your server
 (e.g. Apache or Nginx) could get them.
 Open browser at an appropriate url.
 
-Now you can update MySQL database data, run
-(don't forget to use `-u -p` flags if you need):
-```
-$  mysql < dump.sql
-```
 Run the server, gantt chart gets data on page load automatically.
 
 ## Workspace
