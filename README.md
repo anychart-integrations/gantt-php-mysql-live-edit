@@ -13,12 +13,12 @@ MySQL installed and running, if not, please, check out
 and follow [these instructions](http://dev.mysql.com/doc/refman/5.7/en/installing.html).
 
 #### Version requirements
- - Required php version is **7.0.15**
+ - Required PHP version is **7.0.15**
  - Required MySQL version is **5.6.36** 
 
 
 #### Getting started
-To start this example run commands listed below.
+To start this example, run commands listed below.
 
 Clone the repository from github.com:
 ```
@@ -30,7 +30,7 @@ Navigate to the repository folder:
 $ cd gantt-php-mysql-live-edit
 ```
 
-Ensure you have php-mysql being installed, run:
+Ensure you have php-mysql installed:
 ```
 $ php -m
 ```
@@ -43,9 +43,9 @@ $  mysql -u USER_NAME -p < dump.sql
 Drop `index.html`, `data.php`, `live_edit.php` and `js` and `css` folders
 to a folder where you serve your .php files and your server
 (e.g. Apache or Nginx) could get them.
-Open browser at an appropriate url.
+Open browser at an appropriate URL.
 
-Run the server, gantt chart gets data on page load automatically.
+Run the server, AnyChart gantt chart gets data on page load automatically.
 
 ## Workspace
 Your workspace should look like:
@@ -66,12 +66,13 @@ gantt-php-mysql-live-edit/
 
 ## Please note
 Current demo doesn't save gantt chart connectors to simplify the demonstration and 
-data base structure.
+database structure.
 
 
 ## Technologies
-Language - [PHP](http://php.net)<br />
-Database - [MySQL](https://www.mysql.com/)<br />
+* Language - [PHP](http://php.net)
+* Database - [MySQL](https://www.mysql.com/)
+* Charting - [AnyChart](https://www.anychart.com)
 
 ## Further Learning
 * [Documentation](https://docs.anychart.com)
