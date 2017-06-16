@@ -17,7 +17,7 @@ LANGUAGE SQL
       name varchar(256) NOT NULL,
       actualStart timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
       actualEnd timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-      parent int(11) DEFAULT NULL,
+      parent varchar(256) DEFAULT NULL,
       progressValue varchar(256) NOT NULL
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
     SET data_present = (SELECT COUNT(*) FROM tasks);

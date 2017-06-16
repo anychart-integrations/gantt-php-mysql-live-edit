@@ -12,7 +12,7 @@
             if ($mysqli->query($query) === TRUE) {
                 printf('{"success": "%s"}', $mysqli->insert_id);
             } else {
-                printf('{"fail": "Create fail"}');
+                printf('{"fail": "Create failed: %s"}', $mysqli->error);
             }
 
             break;
@@ -22,7 +22,7 @@
             if ($mysqli->query($query) === TRUE) {
                 printf('{"success": "Update successful"}');
             } else {
-                printf('{"fail": "Update failed"}');
+                printf('{"fail": "Update failed: %s"}', $mysqli->error);
             }
 
             break;
@@ -35,7 +35,7 @@
             if ($mysqli->query($query) === TRUE) {
                 printf('{"success": "Delete successful"}');
             } else {
-                printf('{"fail": "Delete failed"}');
+                printf('{"fail": "Delete failed: %s"}', $mysqli->error);
             }
             break;
     }

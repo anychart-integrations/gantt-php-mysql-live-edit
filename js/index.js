@@ -62,7 +62,7 @@ function initChart(data) {
     var item = e.item;
 
     //e.target is parent tree data item. If is null, created item is root item.
-    var newParentId = e.target ? e.target.get('id') : null;
+    var newParentId = e.target ? e.target.get('id') : 'NULL';
 
     //JSON data for server.
     var data = {
@@ -100,7 +100,7 @@ function initChart(data) {
 
     //get parent data item. Can be null if item is moved to root.
     var targetItem = e.target;
-    var parentId = targetItem ? targetItem.get('id') : null;
+    var parentId = targetItem ? targetItem.get('id') : 'NULL';
 
     //JSON data to be sent.
     var data = {action: 'update', id: id, field: 'parent', value: parentId};
