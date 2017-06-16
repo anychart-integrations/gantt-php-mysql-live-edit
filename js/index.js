@@ -18,7 +18,13 @@ anychart.onDocumentReady(function() {
   //this synchronizes DB date to displayed one.
   anychart.format.outputTimezone((new Date()).getTimezoneOffset());
   //loading chart data from database in JSON-format.
-  anychart.data.loadJsonFile("/data.php", initChart);
+  anychart.data.loadJsonFile("/data.php", function(data) {
+    if (data.fail) {
+      console.log(data);
+    } else {
+      initChart(data);
+    }
+  });
 });
 
 //initialize the chart with data.

@@ -24,8 +24,8 @@ LANGUAGE SQL
     IF data_present = 0 THEN
       INSERT INTO tasks (id, name, actualStart, actualEnd, parent, progressValue) VALUES
         (1, 'Test parent task', '2017-05-01 12:00:00', '2017-05-02 10:00:00', NULL, '10%'),
-        (2, 'Child task 1', '2017-05-01 12:00:00', '2017-05-01 22:00:00', 1, '20%'),
-        (3, 'Child task 2', '2017-05-02 00:00:00', '2017-05-02 10:00:00', 1, '10%');
+        (2, 'Child task 1', '2017-05-01 12:00:00', '2017-05-01 22:00:00', '1', '20%'),
+        (3, 'Child task 2', '2017-05-02 00:00:00', '2017-05-02 10:00:00', '1', '10%');
 
        ALTER TABLE tasks
          ADD PRIMARY KEY (id);

@@ -3,7 +3,7 @@
 	$mysqli = new mysqli("localhost", "anygantt_user", "anygantt_pass", "anygantt_db", 18889);
 
 	// check connection
-    if ($mysqli->connect_errno) die("Connect failed: " . $mysqli->connect_error);
+    if ($mysqli->connect_errno) printf('{"fail": "Connect failed: %s"}', $mysqli->connect_error);
 
     $query = "SELECT * FROM tasks";
 
